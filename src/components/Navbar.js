@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Identicon from 'identicon.js';
+import logo from '../logo.png';
 
 class Navbar extends Component {
 
@@ -12,6 +13,12 @@ class Navbar extends Component {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <img
+            className='ml-2'
+            height='30'
+            src={logo}
+          />
+          &nbsp;&nbsp;
           Don&apos;t Snooze Productions
         </a>
         <ul className="navbar-nav px-3">

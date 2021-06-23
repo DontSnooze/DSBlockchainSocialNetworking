@@ -27,6 +27,9 @@ class App extends Component {
 
   async loadBlockchainData() {
     const web3 = window.web3
+    if (!web3) {
+      return
+    }
     // Load account
     const accounts = await web3.eth.getAccounts()
     this.setState({ account: accounts[0] })
@@ -87,7 +90,6 @@ class App extends Component {
   };
 
   tipPost(id, tipAmount) {
-    const web3 = window.web3
     this.setState({ loading: true })
     let originalThis = this
 
