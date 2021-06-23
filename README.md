@@ -12,4 +12,29 @@ Frontend tested and working on Chrome using MetaMask:
 
 ![DS Blockchain Social Networking - Chrome Screen shot](docs/DSBlockchainSocialNetwork.png)
 
+Dependencies:
+
+[Node](https://nodejs.org)
+- `brew install node`
+
+[Ganache](https://www.trufflesuite.com/ganache)
+- Personal Ethereum blockchain (mainly used for test purposes)
+- Tip: Use the quick start option once installed
+
+[Truffle Framework](https://www.trufflesuite.com/truffle)
+- Tools for developing blockchain applications. 
+- Develop smart contracts, write tests against them, and deploy them to the blockchain.
+- `npm install -g truffle@5.0.5`
+
+[MetaMask](https://metamask.io)
+- Chrome plugin
+- Gateway to blockchain apps and also a crypto wallet
+
+To start the frontend web server:
+- In the project root directory install any dependencies from package.json
+    - `npm install`
+- Start the server
+    - `npm run start`
+
+
 Thanks to [dappuniversity.com](https://www.dappuniversity.com) for tutorials.
