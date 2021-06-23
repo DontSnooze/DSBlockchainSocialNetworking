@@ -2,7 +2,7 @@
 
 This is a Social networking app that runs off a smart contract on the ethereum blockchain.
 
-Users can post messages and tip posts. Tips go to the post author.
+Users can post messages and tip posts. Tips go to the post author. Posts are sorted from highest to lowest tip amount.
 
 There is no database or backend server to save data. All message/tips data is stored on the blockchain.
 
