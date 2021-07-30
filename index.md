@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+# DS Blockchain Social Networking
 
-You can use the [editor on GitHub](https://github.com/DontSnooze/DSBlockchainSocialNetworking/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is a Social networking app that runs off a smart contract on the ethereum blockchain.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Users can post messages and tip posts. Tips go to the post author. Posts are sorted from highest to lowest tip amount.
 
-### Markdown
+There is no database or backend server to save data. All message/tips data is stored on the blockchain.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Currently using a personal blockchain from [Ganache](https://www.trufflesuite.com/ganache) for test purposes. 
 
-```markdown
-Syntax highlighted code block
+Frontend tested and working on Chrome using MetaMask:
 
-# Header 1
-## Header 2
-### Header 3
+![DS Blockchain Social Networking - Chrome Screen shot](docs/DSBlockchainSocialNetwork.png)
 
-- Bulleted
-- List
+Dependencies:
 
-1. Numbered
-2. List
+[Node](https://nodejs.org)
+- `brew install node`
 
-**Bold** and _Italic_ and `Code` text
+[Ganache](https://www.trufflesuite.com/ganache)
+- Personal Ethereum blockchain (mainly used for test purposes)
+- Tip: Use the quick start option once installed
 
-[Link](url) and ![Image](src)
-```
+[Truffle Framework](https://www.trufflesuite.com/truffle)
+- Tools for developing blockchain applications. 
+- Develop smart contracts, write tests against them, and deploy them to the blockchain.
+- `npm install -g truffle@5.0.5`
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+[MetaMask](https://metamask.io)
+- Chrome plugin
+- Gateway to blockchain apps and also a crypto wallet
 
-### Jekyll Themes
+To start the frontend web server:
+- In the project root directory install any dependencies from package.json
+    - `npm install`
+- Start the server
+    - `npm run start`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DontSnooze/DSBlockchainSocialNetworking/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Thanks to [dappuniversity.com](https://www.dappuniversity.com) for tutorials.
